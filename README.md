@@ -11,3 +11,6 @@ Ejecutar la clase ActiveMQProducer
 Ejecutar la clase ActiveMQConsumer.
 El nombre de la aplicación (spring.application.name) define el nombre del consumidor. Por cada nombre de aplicación se 
 crea un grupo de consumidores.
+
+# Añadir elementos a la cola
+curl -X POST "http://localhost:8080/api/employee" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"employeeFirstName\": \"shine\", \"employeeFullName\": \"shine m test\", \"employeeId\": \"129\", \"employeeLastName\": \"test\", \"employeeMiddleName\": \"m\"}"
